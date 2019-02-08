@@ -1,4 +1,4 @@
 - hosts: 80.158.36.213
   become: true
   roles:
-    - ansible-gitlab
+    - ansible-gitlab-master
