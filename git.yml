@@ -1,0 +1,3 @@
+- hosts: 80.158.36.213
+  roles:
+    - ansible-gitlab
