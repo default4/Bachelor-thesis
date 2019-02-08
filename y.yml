@@ -1,6 +1,0 @@
-- hosts: 80.158.36.213
-  remote_user: root
-  become: true
-  tasks:
-    - name: Install
-      shell: curl -O https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh && sh script.rpm.sh && yum -y install gitlab-ce && gitlab-ctl reconfigure
