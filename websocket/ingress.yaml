@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: chat-ingress
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: dmitri.coc09.mms-support.de
+    http:
+      paths:
+        - path: /chat/
+          backend:
+            serviceName: chat-service
+            servicePort: 8080
